@@ -53,7 +53,9 @@ export const getServerSideProps: GetServerSideProps<{
       };
     });
   } catch (e) {
-    console.log("ERROR index.js", e);
+    // will handled in FE
+    // no data available
+    events = [];
   }
 
   return {
